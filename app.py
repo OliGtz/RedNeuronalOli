@@ -2,7 +2,6 @@ import streamlit as st
  
 #writing simple text
  
-st.title("Credit Card App Oli")
 import streamlit as st 
 import pandas as pd
 
@@ -13,8 +12,7 @@ st.title("Credit Card App")
 # ============ Aplicación Principal  ============
         
 # Definir las opciones de página
-pages = ["Cargar Datos"]
-
+pages = ["Cargar Datos", "Explorar Datos"]
 
 # Mostrar un menú para seleccionar la página
 selected_page = st.sidebar.multiselect("Seleccione una página", pages)
@@ -31,4 +29,11 @@ if "Cargar Datos" in selected_page:
         dataset = pd.read_csv(uploaded_file)
     # Mostrar datos en una tabla
         st.write(dataset)
+        
+
+if "Explorar Datos" in selected_page:
+    st.write("""
+    ## Explore Data
+    Distributions""")
+
         
