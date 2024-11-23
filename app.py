@@ -36,4 +36,22 @@ if "Explorar Datos" in selected_page:
     ## Explore Data
     Distributions""")
 
-        
+if "Feature Engineering" in selected_page:
+    st.write("""
+    ## Explore Data
+    Resultados""")
+
+if "Modelado" in selected_page:
+    st.write("""
+    ## Explore Data
+    Resultados""")
+if "Neural Network" in selected_page:
+    st.write("""
+    ## Explore Data
+    Resultados""")
+if "Prediccion" in selected_page:
+    st.write("""
+    ## Explore Data
+    Capture los datos""")
+
+      
