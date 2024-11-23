@@ -39,7 +39,7 @@ if "Explorar Datos" in selected_page:
 if "Feature Engineering" in selected_page:
     st.write("""
     ## Explore Data
-    Resultados""")
+    New Data Set""")
 
 if "Modelado" in selected_page:
     st.write("""
